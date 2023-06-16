@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css" />
+
+        <link rel="stylesheet" href="../css/style.css" />
+        <!-- <link rel="stylesheet" href="reset.css" /> -->
+        <title>HninhShop</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img
+                    class="logo"
+                    src="https://vlonelive.com/wp-content/uploads/2020/10/Vlone-Shop-logo-2.png"
+                    alt=""
+                />
+            </div>
+            <div class="menu">
+                <li><a href="">Nhà</a></li>
+                <li><a href="">Cửa hàng</a></li>
+                <li>
+                    <a href="">
+                        Cửa hàng theo thể loại
+                        <i class="ti-angle-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="./category.html">Vlone vải</a></li>
+                            <li><a href="">Phụ kiện Vlone</a></li>
+                            <li><a href="">Các trường hợp Vlone</a></li>
+                            <li><a href="">Vlone Cosplay</a></li>
+                            <li><a href="">Trang trí Vlone</a></li>
+                            <li><a href="">Hình & Đồ chơi vlone</a></li>
+                            <li><a href="">Bánh răng tập luyện Vlone</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Mua sắm của Rapper Collab
+                        <i class="ti-angle-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="">Vlone x Juicewrld</a></li>
+                            <li><a href="">Vlone x Kodak Đen</a></li>
+                            <li><a href="">Vlone x NAV</a></li>
+                            <li><a href="">Vlone x NBA young boy</a></li>
+                            <li><a href="">Vlone x Playboicarti</a></li>
+                            <li><a href="">Vlone x Popsmoke</a></li>
+                            <li><a href="">Vlone x The Weeknd</a></li>
+                            <li><a href="">Vlone x Tupac Shakur</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="">Theo dõi đơn hàng</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Liên hệ chúng tôi</a></li>
+            </div>
+            <div class="icon">
+                <li>
+                    <input placeholder="tìm kiếm" type="text" /><i
+                        class="nav ti-search"
+                    ></i>
+                </li>
+                <li><i class="ti-heart"></i></li>
+                <li><i class="ti-user"></i></li>
+                <li><i class="ti-shopping-cart"></i></li>
+            </div>
+        </header>
+
+        <!-- slide   -->
+        <section id="slider">
+            <div class="slider-container">
+                <img class="mySlides" src="../img/emblem-Vlone.jpg" alt="" />
+                <img class="mySlides" src="../img/1-27-1024x576.jpg" alt="" />
+                <img
+                    class="mySlides"
+                    src="../img/doi-net-thuong-hieu-vlone.jpg"
+                    alt=""
+                />
+                <img
+                    class="mySlides"
+                    src="../img/il_fullxfull.3332415654_evct.jpg"
+                    alt=""
+                />
+            </div>
+            <div class="dot-container">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </section>
+        <section class="app-container">
+            <p>Tải ứng dụng Vlone Shop</p>
+            <div class="app-google">
+                <img src="../img/appstore.jpg" alt="" />
+                <img src="../img/googleplay.jpg" alt="" />
+            </div>
+            <p>Nhận thông tin từ Vlone</p>
+            <input type="text" placeholder="Nhập email của bạn" />
+            <button class="send-mail">Gửi</button>
+        </section>
+        <!-- footer  -->
+        <div class="footer-top">
+            <li>
+                <a href=""><img src="../img/img-congthuong.jpg" alt="" /></a>
+            </li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Tuyển dụng</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li>
+                <i class="ti-facebook"></i>
+                <i class="ti-instagram"></i>
+                <i class="ti-twitter"></i>
+            </li>
+        </div>
+        <div class="fotter-botom">
+            <pre>
+Công ty Cổ phần Hải Ninh với số đăng ký kinh doanh: 0105777650
+
+Địa chỉ đăng ký: Tổ dân phố Mạc Thái Tổ, P.Yên Hòa, Q.Cầu Giấy, TP.Hà Nội, Việt Nam
+
+Số điện thoại: 0888202903
+
+Email: Nguyenhaininhforwork19@gmail.com</pre
+            >
+        </div>
+    </body>
+    <script>
+        alert("Chúc mừng bạn đã đăng nhập thành công");
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1;
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+</html>
